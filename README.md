@@ -1,2 +1,2 @@
 # EAD
-This is Enterprise Development Application series in C#.
+This is Enterprise Application Development series in C#.
