@@ -1,5 +1,5 @@
 using System;
-using System.Collections;        //for ArrayList class
+using System.Collections;      //for ArrayList
 
 
 namespace events2
@@ -22,6 +22,13 @@ namespace events2
                 Added(this,new EventArgs());        //is event ko delegate ne btaya k tmey 2 parameters chahiye hony
             }
         }
+
+        //myArrayList ne Add k function ko override hony dia qk ye inherited tha ArrayList se aur event b isi ki class me define tha
+        public override int Add(object value)
+        {
+            onAdded();
+            return base.Add(value);
+        }
     }
     class Program
     {
@@ -36,7 +43,11 @@ namespace events2
             };
 
             //calling event
-            list.onAdded();
+            //list.onAdded();        => not right way
+            //Actually you want to call this event when you add any item in list
+            //simply call this function in Add(overrided function).
+
+            list.Add(123);
         }
     }
 }
