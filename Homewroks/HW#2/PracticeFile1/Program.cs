@@ -1,7 +1,7 @@
 //BENEFITS of delgates:
 /*
  1- runtime function invocation(we are not sure which function will be called, all depends on user input)
- 2- function as paramenter of other function
+ 2- function in the paramenter of other function
  */
 
 
