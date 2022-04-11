@@ -35,10 +35,20 @@ namespace LINQ
 
             //2 - query using lamda expression
             //lamda expression do not use return keyword and we do not need to specify the parameter data type as well.
-            var query = cities.Where(cityName=>cityName.Length>5);     //extension method - Where is not any method defined in string array but in system.linq space.
+            var query = cities.Where(cityName => cityName.Length > 5);     //extension method - Where is not any method defined in string array but in system.linq space.
+
+            //where clause se jo result filter ho k aya us ko kis tarha ap print krwana chah ry? (yahan wo pehle 3 characters hen)
+            var query2 = cities
+                         .Where(cityName => cityName.Length > 5)
+                         .Select(cityName => cityName.Substring(0, 3));
 
             //3 - execution of query
             foreach (var city in query)
+            {
+                Console.WriteLine(city);
+            }
+            //3 - execution of query
+            foreach (var city in query2)
             {
                 Console.WriteLine(city);
             }
