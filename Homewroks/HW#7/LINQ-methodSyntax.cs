@@ -1,4 +1,3 @@
-
 /*
  * 
  * -------------This is method syntax to use LINQ.
@@ -44,10 +43,20 @@ namespace LINQ
             //var query = cities.Where(cityName => cityName.Length > 5).ToList();
 
 
-            //where clause se jo result filter ho k aya us ko kis tarha ap print krwana chah ry? (yahan wo pehle 3 characters hen)
+            //where clause se jo result filter ho k aya us ko kis tarha ap print/show krwana chah ry wo select se btaen gy? (yahan wo pehle 3 characters hen)
             var query2 = cities
                          .Where(cityName => cityName.Length > 5)
-                         .Select(cityName => cityName.Substring(0, 3));
+                         .Select(cityName => cityName.Substring(0, 3))
+                         .OrderBy(cityName=>cityName)          //ascending
+                         .ThenBy(cityName=>cityName.Length);   //ascending k baad length ki base pe oerder hon    
+
+
+
+            //multiple queries
+            var query3 = cities.Where(cityName => cityName.Length > 5);
+            query3 = query3.Select(cityName => cityName.Substring(0, 3));
+            query3 = query3.OrderBy(cityName => cityName).ThenBy(cityName => cityName.Length);
+
 
             //3 - execution of query
             foreach (var city in query)
