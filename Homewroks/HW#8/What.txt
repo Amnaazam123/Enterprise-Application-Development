@@ -1,0 +1,20 @@
+How to use ASP.NET
+  1-open VS.
+  2-Create new project
+  3-select ASP.NET core Web App(Model-View-Controller)
+  4-Give your project Name
+  5-Create
+  
+These steps will create project for you. There will be thre folders named as Models, Views and Controllers.
+Before continuing:
+I Deleted default controller.
+  To add new controller - right click on Controller folder > add > controller > empty controller > YourControllerNameController.cs > add
+  This will create default action method. You can add your own action methods.(The methods Which will return any view/interface after some particular action. filhal ap url ko change kr kr k particular view dekho gay accordingly)
+      
+      For html code we use views folder.
+        In views folder, hr controller k against aik folder bnana hota
+        jis ka naam samee wahi hota jo controller ka hota.
+        Us folder k undar hr action method k against aik view bnta aur 
+        us view ka naam same wahi hota jo action method ka hota.
+        hr action method ab aik viewResult return kia kry ga.
+     Furthur View this practical work in controller folder and view folder.
