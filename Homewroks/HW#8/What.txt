@@ -1,3 +1,6 @@
+EAD-shujaurRehman Youtube lecture number-48
+In my VS there is project named as MVC-First
+
 How to use ASP.NET
   1-open VS.
   2-Create new project
@@ -9,7 +12,8 @@ These steps will create project for you. There will be thre folders named as Mod
 Before continuing:
 I Deleted default controller.
   To add new controller - right click on Controller folder > add > controller > empty controller > YourControllerNameController.cs > add
-  This will create default action method. You can add your own action methods.(The methods Which will return any view/interface after some particular action. filhal ap url ko change kr kr k particular view dekho gay accordingly)
+  This will create default action method. You can add your own action methods.
+  (Action methods : The methods Which will return any view/interface after some particular action. filhal ap url ko change kr kr k particular view dekho gay accordingly)
       
       For html code we use views folder.
         In views folder, hr controller k against aik folder bnana hota
@@ -18,3 +22,8 @@ I Deleted default controller.
         us view ka naam same wahi hota jo action method ka hota.
         hr action method ab aik viewResult return kia kry ga.
      Furthur View this practical work in controller folder and view folder.
+
+
+
+
+
