@@ -4,7 +4,7 @@ using System.Collections;      //for ArrayList
 
 namespace events2
 {
-    //aisa delegate jis se aisa event define kia jaye ga jis k argument me 2 parameters huwy
+    //aisa delegate jis se aisa event define kia jaye ga jis k argument me event firing k doran 2 parameters huwy
     delegate void eventHandler(object sender, EventArgs e);
 
 
