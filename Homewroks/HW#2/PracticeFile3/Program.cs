@@ -47,8 +47,8 @@ namespace delegates
 
             Console.WriteLine("\n\nPARAMS:");
             delegate2 d2 = paramFunc;
-            Console.WriteLine(paramFunc(1, 2, 3));
-            Console.WriteLine(paramFunc(1, 2, 3, 4, 5));
+            Console.WriteLine(d2(1, 2, 3));
+            Console.WriteLine(d2(1, 2, 3, 4, 5));
         }
     }
 }
