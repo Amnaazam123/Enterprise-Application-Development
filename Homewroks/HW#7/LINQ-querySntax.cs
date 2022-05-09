@@ -46,8 +46,6 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-
-
             // 1 - define data source
             string[] cities = new string[] { "Lhr", "Okaraaa","karachi" };
 
@@ -80,8 +78,8 @@ namespace LINQ
             */
             List<Student> list = new List<Student>();
             list.Add(new Student("Amna","BSEF19M009",3.88));
-            list.Add(new Student("Laiba", "BSEF19M003", 3.4));
-            list.Add(new Student("Hurmain", "BSEF19M004", 3.2));
+            list.Add(new Student("Laiba", "BSEF19M003", 3.88));
+            list.Add(new Student("Iqra", "BSEF19M012", 4.00));
             list.Add(new Student("Ameena", "BSEF19M032", 3.88));
 
 
@@ -94,6 +92,11 @@ namespace LINQ
             var query = from student in list
                         where student.CGPA < 3.5
                         select student.name;
+                    
+            var queryy = from student in list
+                        where student.CGPA < 3.5
+                        select new{student.name,student.rollNumber};
+
 
             Console.WriteLine("Method syntax:");
             foreach (var student in q)
