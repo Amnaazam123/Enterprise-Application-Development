@@ -1,9 +1,5 @@
 //middleware basics
-/*Difference b/w syncronous(blocking/non-parallel working) and asynchronous(no blocking/parallel working)
-
-
-
-*/
+/*Difference b/w syncronous(blocking/non-parallel working) and asynchronous(no blocking/parallel working)*/
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
