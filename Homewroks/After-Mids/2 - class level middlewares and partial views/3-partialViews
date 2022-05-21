@@ -1,0 +1,6 @@
+why partialviews?
+     1 - aik page k view k subviews bna dena.(code maintainence easy and only change in one piece of view)
+     2 -  reuseability (just include partial and use it any where)
+ 
+how to add/use/include partial views:
+<partial name="myPartialView.cshtml" />
