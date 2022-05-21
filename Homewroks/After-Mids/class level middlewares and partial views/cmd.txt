@@ -1,0 +1,19 @@
+How to Create ASP.NET Core Empty project from command line?
+
+1 - Open windows powershell
+2 - "cls" => this command is used to clear your powershell.
+3 - "--list-sdks" => This command is used to see sdks downloaded in your system.
+4 - choose the directory where you want to create your asp.net project. (cd anyFolderName)
+5 - "dotnet new globaljson --sdk-version 5.0.408 --output lec17" => This command will create json file in your folder named as lec17 in your selected directory.
+    json file will have following piece of code:
+          {
+             "sdk": {
+                       "version": "5.0.408"
+                    }
+          }
+    => specify the version you have, installed on your system in 5th instruction.
+6 - "dotnet new web --no-https --output Lec17 --framework net5.0" => This command will create the template "ASP.NET Core Empty" in lec17 folder.
+7 - "dotnet new sln -o lec17" => This command will create solution file in your asp.net template.
+8 - "dotnet sln lec17 add lec17" => This command is used to add `Lec17.csproj` to the solution.
+9 - CONGRATS! your project is created, Open your folder either in vscode or open .sln file with visual studio.
+10 - Smile and stay blessed.
