@@ -1,11 +1,12 @@
-ASP.NET core has two main components :
--services
--middlewares
+ASP.NET core has three main components :
+- Services
+- Middlewares
+- Request pipeline
 
-->open visual studio
-->select ASP.NET core empty
-->uncheck "configure for http."
-->create project
+-> open visual studio
+-> select ASP.NET core empty
+-> uncheck "configure for http."
+-> create project
 
 ->in startup file, there is configure method which is used to add middlewares. 
 ->delete by default code from configure method.
