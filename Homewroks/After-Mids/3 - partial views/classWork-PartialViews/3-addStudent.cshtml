@@ -1,0 +1,12 @@
+//this is view with addStudent.cshtml name because controller has action method named with addStudent.
+//this page is including layout too so we will direct write code here.
+//This is the view which will use partial view against each attribute of class.
+
+
+<table border="1">
+@foreach(var student in Model)
+{
+     <partial name="myPartialView" model="student" />
+}
+
+</table>
