@@ -3,9 +3,10 @@
 //This will create view(partial view) for you.
 
 
-//class work : Get data from any source(controller) in view, print it in form of rows using rows as partial view.
-//it means your partial view will contain tr and td.
+/*
+partial views are used when you want to divide your code into chunks or when there is repeated code with some data vaiations.
+e.g ap ne controller se list of strings bheji, wo list view me ai, view me forach loop se us list ko iterate kr k hr element ko partial me send kr dia jo row me place hota gya.
+P.S. ap ne agr kuch variables .cshtml file me delare krny hon wo ap @{} is me add kr skty hen.
+*/
 
-<tr>
-    <td>@Model</td>
-</tr>
+<p>@Model</p>
