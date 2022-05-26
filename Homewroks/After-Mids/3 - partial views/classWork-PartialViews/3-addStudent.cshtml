@@ -6,6 +6,7 @@
 <table border="1">
 @foreach(var student in Model)
 {
+     <!--Following line of code will be replace with partial view code using data of "student"(with @Model keyword in partial view)-->
      <partial name="myPartialView" model="student" />
 }
 
