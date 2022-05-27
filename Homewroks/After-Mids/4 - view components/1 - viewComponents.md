@@ -10,4 +10,4 @@ but in viewcomponent we do not need to write entire things.(e.g dynamic menu, sh
 views > shared > make folder "Components" (This is just like views folder now in controller) > make folder "student" > make any cshtml file here(this will be 
 your viewcomponent)
 
-![image](https://user-images.githubusercontent.com/71166016/170655765-77b8f5b4-1ce7-46df-a484-05a6d3e77a33.png)
+![image](https://user-images.githubusercontent.com/71166016/170659880-7d166453-1e1c-40b9-b4a9-b59f5a8f38ba.png)
