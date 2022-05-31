@@ -1,0 +1,18 @@
+-Open VS
+-Create a new project
+-select console application
+-Name your project (select Netcore app 3.1(default))
+Click on create
+You need to install some packages here.
+tools > Nuget package manager > manage nuget packages for solution > browse > Microsoft.EntityFrameworkCore (Please select version 3.1.5 for Netcore app 3.1) > install
+                                                                            > Microsoft.EntityFrameworkCore.SqlServer (Please select version 3.1.5 for Netcore app 3.1 too) > install 
+                                                                            > Microsoft.EntityFrameworkCore.tools (Please select version 3.1.5 for Netcore app 3.1 too) > install
+                                                                            > Microsoft.EntityFrameworkCore.Design (Please select version 3.1.5 for Netcore app 3.1 too) > install
+-Once you have installed all packages, Add DB.
+View > sql Server object explorer > Add DB and table here.
+To create classes and DB context:
+-Search on google "EF core reverse engineer"> 1st link > select visual studio> and copy link.
+-tools > nuget package manager > package manager console > paste that comand by changin DB name(replace "chinook" by your db name)
+ This will create YourDBNameContext.cs and YourTableName.cs Files for you(you can see it in solution explorer).
+ 
+ -Now you can write code in main function.(in Progam.cs file)
