@@ -1,0 +1,39 @@
+Object to relation mapper(ORM):
+
+Objects in memory ---> ORM ---> Relations   (ORM converts objects to Relations when moving in forword direction.)
+Objects in memory <--- ORM <--- Relations   (ORM converts relations(SQL Query) to objects when moving in reverse direction.)
+
+ORM writes query for you. You do nod need to write sql query by yourself.
+ORM ho skta hai perfect query na bna sky, tou is k liye hmey query likhni b par skti. is k liye hm DB k andr stored procedure likhen gy.
+ORM - usage 80-90%
+Queries - usage 10-20%
+
+ORM:
+-generates query
+-basically uses LINQ.
+-converts objects to relations. 
+
+ORM is classified into 2 classes
+1 - Entity Framework
+2 - Depper
+
+How EF wrks????
+DB CONTEXT : represents active session with DB. DB se data get ya save krny k liye ye class use hoti. It has DBSet<T> properties which are made against tables.e.g agr student ka table hai tou student ki aik class bnaeny gy(Entity class) aur hm BDSet<student> kahen gy.
+              used for connection management.
+              Bridge netween SQL and program.
+EF CORE PROVIDER :  it coverts your queries to SQL queries which you define using objects in class.(it converts objects into queries.)
+                    -it generates query.
+                    
+DB PROVIDER: it tells which DB you will use?
+
+There are 2 terms
+-DB FIRST:
+          You have tables and you have to make classes accordingly.
+-CODE FIRST:
+          You have classes and you have to make tables accordingly.
+
+
+
+WE WILL USE USE DB FIRST TODAY.
+
+
