@@ -1,0 +1,16 @@
+
+@model IEnumerable<JQuery_MVC.Models.Student>
+
+<table border="1">
+    @foreach (var s in Model)
+    {
+
+        <tr>
+            <td>@s.Name</td>
+            <td>@s.RollNumber</td>
+        </tr>
+    }
+</table>
+
+
+
