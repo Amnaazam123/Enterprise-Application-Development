@@ -1,0 +1,18 @@
+Question: When to use DB First Approach and when to use Code First Approach?
+There are three approaches :
+
+1 - Code first
+2 - DB First
+3 - Middle Approach
+
+It is the best to choose Code First approach.
+It will be good to use DB First, if you do not want any future change in it beacuse DB First approach will cause all classes to override instead of updating new changes.
+For this, you can create project with DB First and then to update DB, you can use code first(middle approach).
+If you have used DB first approach, you can shift into Code first later.
+
+Algorithm:
+You have used DB First Approach (have created DB, have run scafolding command(this command generates classes against DB)) => DBFirstApproach done.
+Run Add-Migration FirstMigration => it will not generate Migrations folder here and .cs file in it having 2 methods up and down.
+Delete down methd and comment the body of up method.
+update database
+CONGRATS!! you are now in code first mode!!!
