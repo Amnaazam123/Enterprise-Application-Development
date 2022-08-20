@@ -1,0 +1,14 @@
+create a project.
+install packagaes:
+1 - Microsoft.EntityFrameworkCore.sqlServer
+2 - Microsoft.EntityFrameworkCore.tools
+------------------------------After installing packages
+Create tableName class and define its properties(coloumn name).
+create AnyContext class and inherit it from DBContext.
+
+write command in PM:
+Add-Migration InitialCreate(ye classes me nay change ko dekhta hai)
+(abhi sirf aik aisa folder jo create huwa hai jo DB create kray ga)
+To create DB, write command in PM:
+Update-Database
+
