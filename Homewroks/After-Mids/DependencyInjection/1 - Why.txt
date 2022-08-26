@@ -1,0 +1,3 @@
+Dependency injection is used to remove coupling. It decouples the system and help in removing the harcoded names of classes.
+It is also called plugin-play architecture.
+Here we will remove classes and will use interfaces.
