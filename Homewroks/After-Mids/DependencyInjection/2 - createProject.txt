@@ -1,6 +1,9 @@
 Create project
 Add class "Employee" in Model folder.
 Add two folders "repositories" and "interfaces" in Mofdel folder.
-In repositories folder, we make classes which provide definition for interfaces.
 In Interfaces folder, we make interface classes.
+In repositories folder, we make classes "EmployeeRepository" which provide definition for interfaces (:IEmployee).
+Update program.cs file and tell about which interface is being implemented by which class.
+
+
 
