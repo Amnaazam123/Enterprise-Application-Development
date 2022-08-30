@@ -1,0 +1,16 @@
+Problem:
+1 - Let suppose you have some checked checkboxes in your page. These are not stored anywhere in page. Reloading the page loses this information. TThrough state management it is posssible.
+2 - Request is being sent from same user? This information can be get via state management.
+3 - User is in what state at this time? either he is visiting your website first time?
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+There are 2 methods:
+1 - Cookies (state is maintained at client side)
+2 - Sessions (state is maintained at server side)
+
+
+We will look first into cookies:
+-create cookie
+-store information 
+-send response
