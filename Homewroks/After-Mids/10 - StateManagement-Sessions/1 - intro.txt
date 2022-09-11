@@ -1,0 +1,14 @@
+- server side
+- it uses stateless protocols so state manage nai ho ri hoti.
+
+1 - Install packages through package manager solution:
+=> Microsoft.AspNetCore.Session
+2 - Add session middlewares
+In startup.cs, in configure services method: writhe following linkes of code:
+=> services.AddDistributedMemoryCache();
+   services.AddSession();
+3 - In same file add following line of code:
+=> app.UseSession();
+
+4 - in controller, write session code to create sessions.
+
