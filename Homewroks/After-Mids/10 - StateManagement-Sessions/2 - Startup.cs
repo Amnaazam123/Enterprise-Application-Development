@@ -23,10 +23,15 @@ namespace sessions
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //--------------------------------------------------------------------------------------------------------------------------------------------HERE!!!!!
             services.AddControllersWithViews();
+            //--------------------------------------------------------------------------------------------------------------------------------------------HERE!!!!!
             services.AddDistributedMemoryCache();
-            services.AddSession();
+            //services.AddSession();                           by default it has 20 mints expiry time.
+            //what if you want to set expirey time by yourself!
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
