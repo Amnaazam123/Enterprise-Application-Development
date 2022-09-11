@@ -24,10 +24,6 @@ namespace sessions.Controllers
             //if session against key "firstRequest" in not created
             if (!HttpContext.Session.Keys.Contains("firstRequest"))
             {
-                //do you want to set expirey time for session, set it before creating session.
-                CookieOptions options = new CookieOptions();
-                options.Expires = DateTime.Now.AddDays(1);
-
                 //creating session against "firstRequest" key.
                 HttpContext.Session.SetString("firstRequest", DateTime.Now.ToString());
             }
