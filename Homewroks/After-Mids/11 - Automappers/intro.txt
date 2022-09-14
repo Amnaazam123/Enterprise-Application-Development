@@ -1,0 +1,16 @@
+Automappers:
+Normally, We map each coloumn value to any class object. If you have small number of coloumns in table then it is easy to get any record from coloumns through any query
+and map those record values into class object. But what if you have large number of properties?
+1 - We can map any wrong coloumn to any wrong property. 
+2 - There is many redundancy of these line of codes.
+3 - There is time wastage as well.
+
+so, we will use automappers.
+
+For this
+Create MVC project is visual studio.
+install package through package manager:
+- Automappers.Extensions.Microsoft.DependencyInjection
+
+And start writing code.
+Happy Coding :)
