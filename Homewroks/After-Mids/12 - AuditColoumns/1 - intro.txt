@@ -1,0 +1,3 @@
+Make tables which you want to use in your application.
+Make auditColoumns Classes.
+Override SaveContext method.
