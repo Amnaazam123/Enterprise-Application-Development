@@ -1,0 +1,13 @@
+Web services are used to access application data in JSON format.
+Web services accept HTTP requests and generate responses that contain data.
+Most common way to define web services is "Representational State Transfer" in which web services define web API through URL and methods.
+You do not need to write DAL for each type of application, just use REST API.
+
+
+------------- CREATE A PROJECT --------------------
+open vs > create new project > ASP .NET Core Web App > Name your project > Next > Create.
+Make folder "Models" in project.
+Create class Student.cs in this folder.
+Create StudentRepository Class in same folder to retrieve data.
+Add controller (add > new item > search for "API" > API Controller > Name your controller > ADD)
+
